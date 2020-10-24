@@ -14,9 +14,9 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const Button: React.FC<ButtonProps> = ({
-  primary,
+  primary = true,
   big,
-  dark,
+  dark = true,
   fontBig,
   hover,
   to,
