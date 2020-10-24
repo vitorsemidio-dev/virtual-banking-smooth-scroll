@@ -21,14 +21,14 @@ import {
 
 const InfoSection: React.FC = () => {
   return (
-    <InfoContainer>
+    <InfoContainer lightBg>
       <InfoWrapper>
         <InfoRow>
           <Column1>
             <TextWrapper>
               <TopLine>TopLine</TopLine>
-              <Heading lightText>Heading</Heading>
-              <Subtitle>Subtitle</Subtitle>
+              <Heading>Heading</Heading>
+              <Subtitle darkText>Subtitle</Subtitle>
               <BtnWrap>
                 <LinkScrollButton to='home'>Button</LinkScrollButton>
               </BtnWrap>
