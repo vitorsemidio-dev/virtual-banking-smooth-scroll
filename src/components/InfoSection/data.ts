@@ -25,6 +25,56 @@ export const homeObjOne = {
   darkText: false,
 };
 
-const data = {};
+export const homeObjTwo = {
+  id: 'discover',
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: 'Unlimited Access',
+  headline: 'Login to your account at any time',
+  description:
+    'We have you covered to matter where you are located. All you need is an internet connection and a phone or computer',
+  buttonLabel: 'Learn More',
+  imgStart: true,
+  img: mobilePayImg,
+  alt: 'App',
+  dark: false,
+  primary: false,
+  darkText: true,
+};
 
-export default data;
+export const homeObjThree = {
+  id: 'signup',
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: 'Join our Team',
+  headline: 'Creating an account is extremely easy',
+  description:
+    "Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go",
+  buttonLabel: 'Start now',
+  imgStart: false,
+  img: teamImg,
+  alt: 'Team',
+  dark: false,
+  primary: false,
+  darkText: true,
+};
+
+export const homeObjFour = {
+  id: 'signup',
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: 'Join our Team',
+  headline: 'Creating an account is extremely easy',
+  description:
+    "Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go",
+  buttonLabel: 'Get benefits',
+  imgStart: true,
+  img: medicalCareImg,
+  alt: 'Medical',
+  dark: false,
+  primary: false,
+  darkText: true,
+};

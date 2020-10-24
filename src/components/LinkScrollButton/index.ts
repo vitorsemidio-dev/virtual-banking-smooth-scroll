@@ -29,7 +29,7 @@ const LinkScrollButton = styled.a<LinkScrollButtonProps>`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background-color: ${({ primary }) => (primary ? '#010606' : '#01bf71')};
+    background-color: ${({ primary }) => (primary ? '#fff' : '#01bf71')};
   }
 `;
 
