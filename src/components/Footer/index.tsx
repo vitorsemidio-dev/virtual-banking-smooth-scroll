@@ -10,6 +10,12 @@ import {
   FooterLinkItem,
   FooterLinkTitle,
   FooterLink,
+  SocialMedia,
+  SocialMediaWrap,
+  SocialLogo,
+  WebsiteRights,
+  SocialIcons,
+  SocialIconLink,
 } from './styles';
 
 const Footer: React.FC = () => {
@@ -55,6 +61,42 @@ const Footer: React.FC = () => {
             </FooterLinkItem>
           </FooterLinksWrapper>
         </FooterLinksContainer>
+
+        <SocialMedia>
+          <SocialMediaWrap>
+            <SocialLogo to='/'>logo</SocialLogo>
+            <WebsiteRights>
+              logo © {new Date().getFullYear()} All rights reserved.
+            </WebsiteRights>
+
+            <SocialIcons>
+              <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
+                {/* <FaFacebook /> */}
+                FaFacebook
+              </SocialIconLink>
+
+              <SocialIconLink href='/' target='_blank' aria-label='Instagram'>
+                {/* <FaInstagram /> */}
+                FaInstagram
+              </SocialIconLink>
+
+              <SocialIconLink href='/' target='_blank' aria-label='Twitter'>
+                {/* <FaTwitter /> */}
+                FaTwitter
+              </SocialIconLink>
+
+              <SocialIconLink href='/' target='_blank' aria-label='Youtube'>
+                {/* <FaYoutube /> */}
+                FaYoutube
+              </SocialIconLink>
+
+              <SocialIconLink href='/' target='_blank' aria-label='Linkedin'>
+                {/* <FaLinkedin /> */}
+                FaLinkedin
+              </SocialIconLink>
+            </SocialIcons>
+          </SocialMediaWrap>
+        </SocialMedia>
       </FooterWrap>
     </FooterContainer>
   );

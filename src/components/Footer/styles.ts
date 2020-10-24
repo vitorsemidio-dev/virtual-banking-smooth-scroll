@@ -67,3 +67,15 @@ export const FooterLink = styled(Link)`
     transition: 0.3 ease-out;
   }
 `;
+
+export const SocialMedia = styled.div``;
+
+export const SocialMediaWrap = styled.div``;
+
+export const SocialLogo = styled(Link)``;
+
+export const WebsiteRights = styled.div``;
+
+export const SocialIcons = styled.div``;
+
+export const SocialIconLink = styled.a``;
