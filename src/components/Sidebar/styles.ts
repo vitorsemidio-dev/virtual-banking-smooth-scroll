@@ -2,6 +2,8 @@
 
 import styled from 'styled-components';
 import { FaTimes } from 'react-icons/fa';
+import { Link as LinkScroll } from 'react-scroll';
+import { Link as LinkRouter } from 'react-router-dom';
 
 interface SidebarContainerProps {
   isOpen?: boolean;
@@ -34,4 +36,58 @@ export const Icon = styled.div`
   font-size: 2rem;
   cursor: pointer;
   outline: none;
+`;
+
+export const SidebarWrapper = styled.div``;
+
+export const SidebarMenu = styled.ul`
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 80px);
+
+  @media screen and (max-width: 576px) {
+    grid-template-rows: repeat(6, 60px);
+  }
+`;
+
+export const SidebarLink = styled(LinkScroll)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.2s ease-in-out;
+  color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    color: #01bf71;
+    transition: 0.2s ease-in-out;
+  }
+`;
+
+export const SideBtnWrap = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+export const SidebarRouter = styled(LinkRouter)`
+  border-radius: 50px;
+  background: #01bf71;
+  white-space: nowrap;
+  padding: 16px 64px;
+  color: #010606;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+  }
 `;
