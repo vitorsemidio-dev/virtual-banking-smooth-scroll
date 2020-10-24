@@ -4,10 +4,14 @@ import styled from 'styled-components';
 import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
 
-export const Nav = styled.nav`
-  background-color: #000;
+interface NavProps {
+  scrollNav?: boolean;
+}
+
+export const Nav = styled.nav<NavProps>`
+  background-color: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
   height: 80px;
-  /* margin-top: -80px; */
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,6 +45,10 @@ export const NavLogo = styled(LinkRouter)`
   margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
+`;
+
+export const NavLogoIcon = styled.img`
+  height: 40px;
 `;
 
 export const MobileIcon = styled.div`
