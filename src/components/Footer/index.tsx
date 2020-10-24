@@ -75,7 +75,7 @@ const Footer: React.FC = () => {
 
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to='/' onClick={toggleHome}>
+            <SocialLogo to='home' onClick={toggleHome}>
               logo
             </SocialLogo>
             <WebsiteRights>
