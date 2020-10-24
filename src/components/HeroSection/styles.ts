@@ -81,14 +81,18 @@ export const HeroBtnWrapper = styled.div`
   align-items: center;
 `;
 
-export const Button = styled(LinkScroll)`
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  border-radius: 50px;
-  background: #fff;
-  padding: 12px 24px;
-`;
+// interface ButtonProps {
+//   primary?: boolean;
+// }
+
+// export const Button = styled(LinkScroll)`
+//   cursor: pointer;
+//   display: flex;
+//   align-items: center;
+//   border-radius: 50px;
+//   background: ${({ primary }) => (primary ? '' : '')};
+//   padding: 12px 24px;
+// `;
 
 export const ArrowForward = styled(MdArrowForward)`
   margin-left: 8px;
