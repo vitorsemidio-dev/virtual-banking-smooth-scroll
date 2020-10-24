@@ -7,6 +7,8 @@ import HeroSection from '../../components/HeroSection';
 import Sidebar from '../../components/Sidebar';
 import InfoSection from '../../components/InfoSection';
 
+import { homeObjOne } from '../../components/InfoSection/data';
+
 const HomePage: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -17,7 +19,7 @@ const HomePage: React.FC = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
-      <InfoSection />
+      <InfoSection {...homeObjOne} />
     </>
   );
 };
