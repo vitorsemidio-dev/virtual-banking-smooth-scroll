@@ -6,6 +6,7 @@ import Navbar from '../../components/Navbar';
 import HeroSection from '../../components/HeroSection';
 import Sidebar from '../../components/Sidebar';
 import InfoSection from '../../components/InfoSection';
+import Footer from '../../components/Footer';
 
 import Services from '../../components/Services';
 
@@ -31,6 +32,7 @@ const HomePage: React.FC = () => {
       {/* <InfoSection {...homeObjFour} /> */}
       <Services />
       <InfoSection {...homeObjThree} />
+      <Footer />
     </>
   );
 };
