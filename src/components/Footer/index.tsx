@@ -8,6 +8,7 @@ import {
   FaTwitter,
   FaLinkedin,
 } from 'react-icons/fa';
+import { animateScroll } from 'react-scroll';
 
 import {
   FooterContainer,
@@ -26,6 +27,9 @@ import {
 } from './styles';
 
 const Footer: React.FC = () => {
+  const toggleHome = () => {
+    animateScroll.scrollToTop();
+  };
   return (
     <FooterContainer>
       <FooterWrap>
@@ -71,7 +75,9 @@ const Footer: React.FC = () => {
 
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to='/'>logo</SocialLogo>
+            <SocialLogo to='/' onClick={toggleHome}>
+              logo
+            </SocialLogo>
             <WebsiteRights>
               logo © {new Date().getFullYear()} All rights reserved.
             </WebsiteRights>

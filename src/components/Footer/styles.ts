@@ -1,7 +1,7 @@
 /** @format */
 
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 export const FooterContainer = styled.footer`
   background-color: #011522;
