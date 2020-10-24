@@ -34,7 +34,9 @@ const Footer: React.FC = () => {
               <FooterLink to='#'>Agency</FooterLink>
               <FooterLink to='#'>Influencer</FooterLink>
             </FooterLinkItem>
+          </FooterLinksWrapper>
 
+          <FooterLinksWrapper>
             <FooterLinkItem>
               <FooterLinkTitle>Contact Us</FooterLinkTitle>
               <FooterLink to='#'>Contact</FooterLink>
