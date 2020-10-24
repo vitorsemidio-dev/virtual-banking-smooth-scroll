@@ -7,6 +7,8 @@ import HeroSection from '../../components/HeroSection';
 import Sidebar from '../../components/Sidebar';
 import InfoSection from '../../components/InfoSection';
 
+import Services from '../../components/Services';
+
 import {
   homeObjOne,
   homeObjTwo,
@@ -28,6 +30,7 @@ const HomePage: React.FC = () => {
       <InfoSection {...homeObjTwo} />
       <InfoSection {...homeObjThree} />
       {/* <InfoSection {...homeObjFour} /> */}
+      <Services />
     </>
   );
 };

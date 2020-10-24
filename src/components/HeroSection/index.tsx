@@ -39,6 +39,7 @@ const HeroSection: React.FC = () => {
         <HeroBtnWrapper>
           <LinkScrollButton
             primary
+            dark
             to='signup'
             onMouseEnter={onHover}
             onMouseLeave={onHover}>
