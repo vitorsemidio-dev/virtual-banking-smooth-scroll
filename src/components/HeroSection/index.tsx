@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import video from '../../videos/video.mp4';
 
 import Button from '../Button';
+import { LinkScrollButton } from '../Button/styles';
 
 import {
   HeroContainer,
@@ -38,13 +39,12 @@ const HeroSection: React.FC = () => {
         </HeroP>
 
         <HeroBtnWrapper>
-          <Button
+          <LinkScrollButton
             to='signup'
-            hover={hover}
             onMouseEnter={onHover}
             onMouseLeave={onHover}>
             Get started {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
+          </LinkScrollButton>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>

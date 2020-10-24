@@ -2,7 +2,7 @@
 
 import React, { ButtonHTMLAttributes } from 'react';
 
-import { ButtonContainer } from './styles';
+import { ButtonContainer, LinkScrollButton } from './styles';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   primary?: boolean;
@@ -23,16 +23,16 @@ const Button: React.FC<ButtonProps> = ({
   children,
 }) => {
   return (
-    <ButtonContainer
-      style={{
-        backgroundColor: primary ? '#01BF71' : '#010606',
-        padding: big ? '14px 48px' : '12px 30px',
-        color: dark ? '#010606' : '#fff',
-        fontSize: fontBig ? '20px' : '16px',
-      }}
+    <LinkScrollButton
+      // style={{
+      //   backgroundColor: primary ? '#01BF71' : '#010606',
+      //   padding: big ? '14px 48px' : '12px 30px',
+      //   color: dark ? '#010606' : '#fff',
+      //   fontSize: fontBig ? '20px' : '16px',
+      // }}
       to={to}>
       {children}
-    </ButtonContainer>
+    </LinkScrollButton>
   );
 };
 
