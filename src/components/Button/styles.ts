@@ -13,5 +13,5 @@ export const ButtonContainer = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.2 ease-in-out;
+  transition: all 0.2s ease-in-out;
 `;

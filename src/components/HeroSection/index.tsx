@@ -38,7 +38,11 @@ const HeroSection: React.FC = () => {
         </HeroP>
 
         <HeroBtnWrapper>
-          <Button to='signup' onMouseEnter={onHover} onMouseLeave={onHover}>
+          <Button
+            to='signup'
+            hover={hover}
+            onMouseEnter={onHover}
+            onMouseLeave={onHover}>
             Get started {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>

@@ -1,17 +1,16 @@
 /** @format */
 
-import React from 'react';
+import React, { ButtonHTMLAttributes } from 'react';
 
 import { ButtonContainer } from './styles';
 
-interface ButtonProps {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   primary?: boolean;
   big?: boolean;
   dark?: boolean;
   fontBig?: boolean;
+  hover?: boolean;
   to: string;
-  onMouseEnter: () => void;
-  onMouseLeave: () => void;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -19,6 +18,7 @@ const Button: React.FC<ButtonProps> = ({
   big,
   dark,
   fontBig,
+  hover,
   to,
   children,
 }) => {
