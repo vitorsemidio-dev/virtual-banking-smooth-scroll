@@ -1,20 +1,7 @@
 /** @format */
 
 import styled from 'styled-components';
-import { Link, LinkProps } from 'react-scroll';
-
-export const ButtonContainer = styled(Link)`
-  border-radius: 50px;
-  white-space: nowrap;
-  outline: none;
-  border: none;
-  cursor: pointer;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2s ease-in-out;
-`;
+import { LinkProps } from 'react-scroll';
 
 interface LinkScrollButtonProps extends LinkProps {
   primary?: boolean;
@@ -23,7 +10,7 @@ interface LinkScrollButtonProps extends LinkProps {
   fontBig?: boolean;
 }
 
-export const LinkScrollButton = styled.a<LinkScrollButtonProps>`
+const LinkScrollButton = styled.a<LinkScrollButtonProps>`
   border-radius: 50px;
   white-space: nowrap;
   outline: none;
@@ -45,3 +32,5 @@ export const LinkScrollButton = styled.a<LinkScrollButtonProps>`
     background-color: ${({ primary }) => (primary ? '#010606' : '#01bf71')};
   }
 `;
+
+export default LinkScrollButton;

@@ -4,8 +4,7 @@ import React, { useState } from 'react';
 
 import video from '../../videos/video.mp4';
 
-import Button from '../Button';
-import { LinkScrollButton } from '../Button/styles';
+import LinkScrollButton from '../LinkScrollButton';
 
 import {
   HeroContainer,
@@ -15,7 +14,6 @@ import {
   HeroH1,
   HeroP,
   HeroBtnWrapper,
-  // Button,
   ArrowForward,
   ArrowRight,
 } from './styles';
@@ -40,6 +38,7 @@ const HeroSection: React.FC = () => {
 
         <HeroBtnWrapper>
           <LinkScrollButton
+            primary
             to='signup'
             onMouseEnter={onHover}
             onMouseLeave={onHover}>
