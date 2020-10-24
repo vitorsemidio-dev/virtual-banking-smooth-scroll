@@ -13,10 +13,15 @@ import {
   SidebarRouter,
 } from './styles';
 
-const Sidebar: React.FC = () => {
+interface SidebarProps {
+  isOpen: boolean;
+  toggle: () => void;
+}
+
+const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggle }) => {
   return (
-    <SidebarContainer isOpen>
-      <Icon>
+    <SidebarContainer isOpen={isOpen}>
+      <Icon onClick={() => toggle()}>
         <CloseIcon></CloseIcon>
       </Icon>
       <SidebarWrapper>

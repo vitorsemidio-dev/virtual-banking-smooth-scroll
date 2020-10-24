@@ -15,14 +15,18 @@ import {
   NavBtnLink,
 } from './styles';
 
-const Navbar: React.FC = () => {
+interface NavbarProps {
+  toggle: () => void;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
   return (
     <>
       <Nav>
         <NavContainer>
           <NavLogo to='/'>logo</NavLogo>
 
-          <MobileIcon>
+          <MobileIcon onClick={() => toggle()}>
             <FaBars />
           </MobileIcon>
 
