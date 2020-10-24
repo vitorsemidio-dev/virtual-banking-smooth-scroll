@@ -26,7 +26,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
         <NavContainer>
           <NavLogo to='/'>logo</NavLogo>
 
-          <MobileIcon onClick={() => toggle()}>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
 
