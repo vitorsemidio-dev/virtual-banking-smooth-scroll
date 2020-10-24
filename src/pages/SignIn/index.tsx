@@ -4,12 +4,15 @@ import React from 'react';
 
 import ScrollToTop from '../../components/ScrollToTop';
 
+import logo from '../../images/undraw_Savings_re_eq4w.svg';
+
 import {
   SignInContainer,
   FormWrap,
   Icon,
   FormContent,
   Form,
+  ImgLogo,
   FormH1,
   FormLabel,
   FormInput,
@@ -26,6 +29,7 @@ const SignIn: React.FC = () => {
           <Icon to='/'>logo</Icon>
           <FormContent>
             <Form action='#'>
+              <ImgLogo src={logo} />
               <FormH1>Sign in to your account</FormH1>
 
               <FormLabel htmlFor='for'>Email</FormLabel>
