@@ -28,9 +28,9 @@ const HomePage: React.FC = () => {
       <HeroSection />
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
-      <InfoSection {...homeObjThree} />
       {/* <InfoSection {...homeObjFour} /> */}
       <Services />
+      <InfoSection {...homeObjThree} />
     </>
   );
 };
