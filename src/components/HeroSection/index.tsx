@@ -2,10 +2,6 @@
 
 import React, { useState } from 'react';
 
-import video from '../../videos/video.mp4';
-
-import LinkScrollButton from '../LinkScrollButton';
-
 import {
   HeroContainer,
   HeroBg,
@@ -14,9 +10,12 @@ import {
   HeroH1,
   HeroP,
   HeroBtnWrapper,
+  HeroCTA,
   ArrowForward,
   ArrowRight,
 } from './styles';
+
+import video from '../../videos/video.mp4';
 
 const HeroSection: React.FC = () => {
   const [hover, setHover] = useState(false);
@@ -37,14 +36,16 @@ const HeroSection: React.FC = () => {
         </HeroP>
 
         <HeroBtnWrapper>
-          <LinkScrollButton
-            primary
-            dark
-            to='signup'
+          <HeroCTA
             onMouseEnter={onHover}
-            onMouseLeave={onHover}>
+            onMouseLeave={onHover}
+            to='signup'
+            smooth={true}
+            duration={500}
+            spy={true}
+            offset={-80}>
             Get started {hover ? <ArrowForward /> : <ArrowRight />}
-          </LinkScrollButton>
+          </HeroCTA>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>

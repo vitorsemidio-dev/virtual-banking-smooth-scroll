@@ -2,6 +2,8 @@
 
 import React from 'react';
 
+import ScrollToTop from '../../components/ScrollToTop';
+
 import {
   SignInContainer,
   FormWrap,
@@ -17,26 +19,29 @@ import {
 
 const SignIn: React.FC = () => {
   return (
-    <SignInContainer>
-      <FormWrap>
-        <Icon to='/'>logo</Icon>
-        <FormContent>
-          <Form action='#'>
-            <FormH1>Sign in to your account</FormH1>
+    <>
+      <ScrollToTop />
+      <SignInContainer>
+        <FormWrap>
+          <Icon to='/'>logo</Icon>
+          <FormContent>
+            <Form action='#'>
+              <FormH1>Sign in to your account</FormH1>
 
-            <FormLabel htmlFor='for'>Email</FormLabel>
-            <FormInput type='email' required />
+              <FormLabel htmlFor='for'>Email</FormLabel>
+              <FormInput type='email' required />
 
-            <FormLabel htmlFor='for'>Password</FormLabel>
-            <FormInput type='password' required />
+              <FormLabel htmlFor='for'>Password</FormLabel>
+              <FormInput type='password' required />
 
-            <FormButton type='submit'>Continue</FormButton>
+              <FormButton type='submit'>Continue</FormButton>
 
-            <Text>Forgot password</Text>
-          </Form>
-        </FormContent>
-      </FormWrap>
-    </SignInContainer>
+              <Text>Forgot password</Text>
+            </Form>
+          </FormContent>
+        </FormWrap>
+      </SignInContainer>
+    </>
   );
 };
 
